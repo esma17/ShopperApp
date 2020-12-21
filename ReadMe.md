@@ -10,7 +10,14 @@ This is the __website__ we are creating [here](https://www.google.com)
 
 n| User Story | Acceptance Criteria
 -|-|-
-1.
+1. |As a customer I should be able to access Menu Module| 
+|   |
+2. |As a customer I should be able select items from the Categories under the Menu Module  |  1.Verify that Customer should be able to see all items information once 
+navigate to Categories page
+2. Verify that Customer should be able to select an item, choose quantity of the item, and add to a cart.
+3. Verify that Customer should be able to add items to the cart.
+4. Verify that Customer should be able to unselect an item from the cart.
+5. Verify that Customer should be able to 
 
 
 
