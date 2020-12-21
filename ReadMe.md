@@ -38,3 +38,40 @@ n| User Story | Acceptance Criteria
 
   - [ ] Hello
   - This is best
+  
+ Categories 
+1. Vegetables
+2. Fruit
+3. Drinks
+
+
+
+
+1. Vegetables             Price by weight(lbs)            Price by each
+*  Pepper                                                   0.55
+*  Onion                         1.98
+*  Potato                        1.50
+* Tomato                                                    0.75
+* Broccoli                        1.6
+* Carrot                          1.19
+* Cauliflower                                              1.9
+* Spinach                         0.8
+* Asparagus                       2
+* Green Bean                      0.7
+
+2. Fruits
+* Apple
+* Banana
+* Lemon
+* Grape
+* Strawberry
+* Watermelon
+* Blueberry
+* Raspberry
+* Mango
+* Orange
+* Mandarin
+* Cherry
+* Cranberry
+* Peach 
+  
