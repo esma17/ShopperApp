@@ -1,5 +1,8 @@
 package Ayse.Product;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class JEKApp {
 
         public static void main(String[] args) {
@@ -12,6 +15,11 @@ public class JEKApp {
             Product[] products = {product2, product3, product4};
             shoppingCart.addProduct(products);
             System.out.println(shoppingCart);
+            //added by esma
+            ArrayList<Product> products2 = new ArrayList<>(Arrays.asList(product2,product4));
+            shoppingCart.setProducts(products2);
+            System.out.println(shoppingCart.getCartList());
+
         }
     }
 

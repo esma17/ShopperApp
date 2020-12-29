@@ -8,7 +8,12 @@ import java.util.Arrays;
         public void setProducts(ArrayList<Product> products) {
             this.cartList = products;
         }
-        public void addProduct(Product product) {
+
+       public ArrayList<Product> getCartList() {
+           return cartList;
+       }
+
+       public void addProduct(Product product) {
             cartList.add(product);
         }
         public void addProduct(Product[] products) {
