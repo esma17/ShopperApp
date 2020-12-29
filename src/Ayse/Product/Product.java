@@ -48,7 +48,7 @@ public class Product {
         }
         @Override
         public String toString() {
-            return "Ayse.Product.Ayse.Product{" +
+            return "Product{" +
                     "productName='" + productName + '\'' +
                     ", productID='" + productID + '\'' +
                     ", quantity=" + quantity +
