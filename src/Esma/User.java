@@ -5,7 +5,7 @@ import java.util.Random;
 public class User {
 
     // checks if the password meets the criteria length=8 at least:
-    // 1 special char, 1 digit,1letter,1 uppercase letter , 1 lowe case letter
+    // 1 special char, 1 digit,1letter,1 uppercase letter , 1 lower case letter
 
 
     public boolean passwordChecker(String password){

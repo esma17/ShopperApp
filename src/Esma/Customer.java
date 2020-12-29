@@ -1,7 +1,10 @@
 package Esma;
 
+import java.time.LocalDate;
+
 public class Customer extends User {
-    private String customerID, customerPassword;
+    private String customerID, customerPassword, paymentType, cardNumber,  securityCode;
+    private LocalDate expiringDate;
 
     public Customer(String customerID, String customerPassword) {
         this.customerID = customerID;
@@ -30,7 +33,7 @@ public class Customer extends User {
     public String toString() {
         return "Customer{" +
                 "customerID='" + customerID + '\'' +
-                ", customerPassword='" + customerPassword + '\'' +
+                ", expiringDate=" + expiringDate +
                 '}';
     }
 }

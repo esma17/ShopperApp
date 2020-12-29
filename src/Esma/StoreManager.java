@@ -13,6 +13,11 @@ public class StoreManager extends User {
         }
     }
 
+    public StoreManager(String storeManagerUserID, String storeManagerPassword) {
+        this.storeManagerUserID = storeManagerUserID;
+        this.storeManagerPassword = storeManagerPassword;
+    }
+
     public String getStoreManagerUserID() {
         return storeManagerUserID;
     }
