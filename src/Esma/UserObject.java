@@ -1,6 +1,6 @@
 package Esma;
 
-public class UserObect {
+public class UserObject {
     public static void main(String[] args) {
 
 
