@@ -6,13 +6,13 @@ public class Dairy extends Product {
 
     private String dairyName;
     private double weight;
-    public Dairy(String productID, int quantity, double productPrice, String dairyName) {
-        super("Dairy", productID, quantity, productPrice);
+    public Dairy(int quantity, double productPrice, String dairyName) {
+        super("Dairy",  quantity, productPrice);
         this.dairyName = dairyName;
     }
 
-    public Dairy( String productID, double productPrice, double weight, String dairyName) {
-        super("Dairy", productID, productPrice);
+    public Dairy( double productPrice, double weight, String dairyName) {
+        super("Dairy",  productPrice);
         this.weight = weight;
         this.dairyName = dairyName;
     }
@@ -36,10 +36,10 @@ public class Dairy extends Product {
 
     @Override
     public String toString() {
-        return "Dairy{" +
-                "weight = " + weight +
-                ", dairyName = '" + dairyName + '\'' +
-                ", total price = $"+ calculateCost() +"}";
+        return "\n\u2665"+"Dairy" +"\u2665"+
+                "\nName: " + dairyName +
+                "\nLabel: " + getProductID()+
+                "\nTotal Price: $"+ calculateCost();
 
     }
 }

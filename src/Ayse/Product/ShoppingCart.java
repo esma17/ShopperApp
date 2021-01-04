@@ -27,9 +27,7 @@ import java.util.Arrays;
         }
         @Override
         public String toString() {
-            return "\nCart" +
-                    "\nList of the products=" + cartList +
-                    "\n=============================";
+            return "";
         }
     }
 

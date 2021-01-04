@@ -6,8 +6,8 @@ public class Bakery extends Product {
 
     private String bakeryName;
 
-    public Bakery(String bakeryName, String productID, int quantity, double productPrice) {
-        super("Bakery", productID, quantity, productPrice);
+    public Bakery(String bakeryName, int quantity, double productPrice) {
+        super("Bakery", quantity, productPrice);
         this.bakeryName = bakeryName;
     }
 
@@ -21,7 +21,7 @@ public class Bakery extends Product {
 
     @Override
     public String toString() {
-        return "\u2665"+"Bakery" +"\u2665"+
+        return "\n\u2665"+"Bakery" +"\u2665"+
                 "\nName: " + bakeryName +
                 "\nLabel: " + getProductID()+
                 "\nQuantity: "+getQuantity()+

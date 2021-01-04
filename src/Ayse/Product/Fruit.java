@@ -6,13 +6,13 @@ package Ayse.Product;
         private double weight;
         private String fruitName;
 
-        public Fruit( String productID, int quantity, double productPrice,String fruitName) {
-            super("Fruit", productID, quantity, productPrice);
+        public Fruit(String fruitName, int quantity, double productPrice) {
+            super("Fruit", quantity, productPrice);
             this.fruitName = fruitName;
         }
 
-        public Fruit( String productID, double productPrice, double weight, String fruitName) {
-            super("Fruit", productID, productPrice);
+        public Fruit(String fruitName, double weight, double productPrice) {
+            super("Fruit",  productPrice);
             this.weight = weight;
             this.fruitName = fruitName;
         }
@@ -36,10 +36,10 @@ package Ayse.Product;
 
         @Override
         public String toString() {
-            return "Fruit{" +
-                    "weight=" + weight +
-                    ", fruitName='" + fruitName + '\'' +
-                    "total price ="+ calculateCost();
+            return "\n\u2665"+"Fruit" +"\u2665"+
+                    "\nName: " + fruitName +
+                    "\nLabel: " + getProductID()+
+                    "\nTotal Price: $"+calculateCost();
 
         }
     }

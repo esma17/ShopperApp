@@ -8,18 +8,21 @@ public class Product {
     private String productName, productID;
     private int quantity;
     private double productPrice, total;
+    static int nextID = 100000;
 
-    public Product(String productName, String productID, int quantity, double productPrice) {
+    public Product(String productName, int quantity, double productPrice) {
         this.productName = productName;
-        this.productID = productID;
+        productID = productName.substring(0,1) + nextID;
+        nextID++;
         this.quantity = quantity;
         this.productPrice = productPrice;
         total = calculateCost();
     }
 
-    public Product(String productName, String productID, double productPrice) {
+    public Product(String productName,  double productPrice) {
         this.productName = productName;
-        this.productID = productID;
+        productID = productName.substring(0,1) + nextID;
+        nextID++;
         this.productPrice = productPrice;
         total = calculateCost();
     }
@@ -71,13 +74,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "productName='" + productName + '\'' +
-                ", productID='" + productID + '\'' +
-                ", quantity=" + quantity +
-                ", productPrice=" + productPrice +
-                ", total=" + total +
-                '}';
+        return "";
     }
 }
 
