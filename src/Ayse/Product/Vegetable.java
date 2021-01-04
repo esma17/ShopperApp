@@ -39,7 +39,7 @@ public class Vegetable extends Product {
 
     @Override
     public double priceList() {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); // added scanner class
         vegetableName = input.nextLine();
         switch (vegetableName){
             case "pepper":
