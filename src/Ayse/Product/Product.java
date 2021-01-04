@@ -2,28 +2,33 @@ package Ayse.Product;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Product {
 
     private String productName, productID;
     private int quantity;
     private double productPrice, total;
-    static int nextID = 100000;
+    static int nextID = 0;
 
-    public Product(String productName, int quantity, double productPrice) {
+    public Product(String productName, int quantity) {
+        System.out.println("Enter your product name:");
         this.productName = productName;
-        productID = productName.substring(0,1) + nextID;
+        productID =  productName.substring(0,2) + "#" + nextID;
         nextID++;
-        this.quantity = quantity;
-        this.productPrice = productPrice;
+        //System.out.println("Enter quantity");
+        //Scanner input = new Scanner(System.in);
+        this.quantity = quantity; //input.nextInt();
+
+        productPrice = priceList();
         total = calculateCost();
     }
 
-    public Product(String productName,  double productPrice) {
+    public Product(String productName) {
         this.productName = productName;
-        productID = productName.substring(0,1) + nextID;
+        productID = productName.substring(0,2) + "#" + nextID;
         nextID++;
-        this.productPrice = productPrice;
+        productPrice = priceList();
         total = calculateCost();
     }
 
@@ -65,6 +70,10 @@ public class Product {
 
     public void setTotal(double total) {
         this.total = total;
+    }
+
+    public double priceList(){
+        return productPrice;
     }
 
     public double calculateCost(){

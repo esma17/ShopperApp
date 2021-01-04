@@ -6,8 +6,9 @@ public class Bakery extends Product {
 
     private String bakeryName;
 
-    public Bakery(String bakeryName, int quantity, double productPrice) {
-        super("Bakery", quantity, productPrice);
+    public Bakery(String bakeryName, int quantity) {
+        super("Bakery", quantity);
+        System.out.println("Enter your bakery name:");
         this.bakeryName = bakeryName;
     }
 

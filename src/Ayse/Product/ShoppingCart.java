@@ -9,11 +9,11 @@ import java.util.Arrays;
             this.cartList = products;
         }
 
-       public ArrayList<Product> getCartList() {
+        public ArrayList<Product> getCartList() {
            return cartList;
        }
 
-       public void addProduct(Product product) {
+        public void addProduct(Product product) {
             cartList.add(product);
         }
         public void addProduct(Product[] products) {
